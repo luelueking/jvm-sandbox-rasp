@@ -12,6 +12,7 @@
         <module>Rce-Hook</module>
         <module>Sqli-Hook</module>
         <module>Rce-Native-Hook</module>
+        <module>Xxe-Hook</module>
     </modules>
 
     <parent>

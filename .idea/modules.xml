@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" filepath="$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" filepath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sqli-Hook/Sqli-Hook.iml" filepath="$PROJECT_DIR$/Sqli-Hook/Sqli-Hook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Xxe-Hook/Xxe-Hook.iml" filepath="$PROJECT_DIR$/Xxe-Hook/Xxe-Hook.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm-sandbox-rasp.iml" filepath="$PROJECT_DIR$/jvm-sandbox-rasp.iml" />
     </modules>
   </component>
