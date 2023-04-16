@@ -1,0 +1,4 @@
+# Project exclude paths
+/Rce-Hook/target/
+/Rce-Native-Hook/target/
+/Sqli-Hook/target/
