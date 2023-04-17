@@ -1,4 +1,4 @@
-package com.lue.rasp;
+package com.lue.rasp.hook.rce;
 
 import com.alibaba.jvm.sandbox.api.Information;
 import com.alibaba.jvm.sandbox.api.Module;
@@ -8,6 +8,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.context.RequestContextHolder;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
@@ -33,10 +34,12 @@ public class NativeRceHook implements Module, ModuleLifecycle {
                         System.out.println("hook到native的forkAndExec方法");
                         // TODO 对上下文进行分析判断
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
-                        System.out.println(context);
-                        System.out.println(context.getRequest().getRequestURI());
-                        // 直接拦截
-                        ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
+                        if (context != null) {
+                            System.out.println(context);
+                            System.out.println(context.getRequest().getRequestURI());
+                            // 直接拦截
+                            ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
+                        }
                         super.before(advice);
                     }
                 });

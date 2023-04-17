@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Xxe-Hook</artifactId>
+    <artifactId>Rasp-All</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,6 +17,21 @@
     </properties>
 
     <dependencies>
+        <!-- http -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
+
+        <!-- sqli -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.14</version>
+        </dependency>
+
+        <!-- xxe -->
         <dependency>
             <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>
@@ -35,7 +50,6 @@
             <version>2.0.6.1</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
@@ -43,4 +57,5 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
 </project>

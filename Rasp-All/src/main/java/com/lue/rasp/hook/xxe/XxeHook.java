@@ -1,4 +1,4 @@
-package com.lue.rasp;
+package com.lue.rasp.hook.xxe;
 
 import com.alibaba.jvm.sandbox.api.Information;
 import com.alibaba.jvm.sandbox.api.Module;

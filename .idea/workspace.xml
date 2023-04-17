@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加XXE防御">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/HttpHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/InterfaceProxyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/RequestContextHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加上下文获取">
+      <change afterPath="$PROJECT_DIR$/Rasp-All/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/context/RequestContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/xxe/XxeHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/InterfaceProxyUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Hook/src/main/java/com/lue/rasp/RceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Hook/src/main/java/com/lue/rasp/RceHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/HttpHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/HttpHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/NativeRceHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -86,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="21304000" />
+      <workItem from="1681629500041" duration="23072000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681655602001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加上下文获取">
+      <created>1681739231132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681739231132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加XXE防御" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加XXE防御" />
+    <MESSAGE value="添加上下文获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加上下文获取" />
   </component>
 </project>

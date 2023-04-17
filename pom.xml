@@ -13,6 +13,7 @@
         <module>Sqli-Hook</module>
         <module>Rce-Native-Hook</module>
         <module>Xxe-Hook</module>
+        <module>Rasp-All</module>
     </modules>
 
     <parent>

@@ -9,6 +9,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Http-Hook/pom.xml" />
+        <option value="$PROJECT_DIR$/Sqli-Hook/pom.xml" />
+        <option value="$PROJECT_DIR$/Xxe-Hook/pom.xml" />
       </set>
     </option>
   </component>
