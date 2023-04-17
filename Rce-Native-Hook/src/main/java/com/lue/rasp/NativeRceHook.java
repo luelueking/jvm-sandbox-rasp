@@ -11,10 +11,11 @@ import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
+import java.lang.reflect.Method;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.1")
+@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.4")
 public class NativeRceHook implements Module, ModuleLifecycle {
 
 
@@ -31,7 +32,10 @@ public class NativeRceHook implements Module, ModuleLifecycle {
                     @Override
                     protected void before(Advice advice) throws Throwable {
                         System.out.println("hook到native的forkAndExec方法");
-                        // TODO 添加上下文
+                        // TODO 对上下文进行分析判断
+                        RequestContextHolder.Context context = RequestContextHolder.getContext();
+                        System.out.println(context);
+                        System.out.println(context.getRequest().getRequestURI());
                         // 直接拦截
                         ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         super.before(advice);

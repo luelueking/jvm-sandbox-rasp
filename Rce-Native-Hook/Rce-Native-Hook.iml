@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.5" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.alibaba.jvm.sandbox:sandbox-api:1.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.alibaba.jvm.sandbox:sandbox-common-api:1.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />

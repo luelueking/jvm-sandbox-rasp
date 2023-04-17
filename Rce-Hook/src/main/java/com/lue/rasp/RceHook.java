@@ -19,7 +19,7 @@ public class RceHook implements Module, ModuleLifecycle{
     @Resource
     private ModuleEventWatcher moduleEventWatcher;
 
-
+    
     public void checkRceCommand() {
         new EventWatchBuilder(moduleEventWatcher)
                 .onClass(ProcessBuilder.class)
