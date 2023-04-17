@@ -1,7 +1,7 @@
 # jvm-sandbox-rasp
 一个基于jvm-sandbox高度定制化rasp
 ### Quick-start
-- 将xxx-Hook-xxx.jar放入${sanbox-home}/module目录下
+- 将Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar放入${sanbox-home}/module目录下
 ```shell
 cd ${sandbox-home}/bin // 进入sandbox
 jps -l // 查看选择attach的java进程
