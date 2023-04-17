@@ -15,5 +15,5 @@ jps -l // 查看选择attach的java进程
 - sql注入防御
 - xxe注入防御
 ### 优点
-- 与jvm-sandbox继承(支持module热插拔)
+- 与jvm-sandbox集成(支持module热插拔)
 - 完全的类加载器隔离(不会出现openrasp类加载模式导致的类冲突问题)
