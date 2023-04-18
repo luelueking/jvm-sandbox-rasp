@@ -17,14 +17,14 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-http-hook" , author = "1ue" , version = "0.0.4")
+@Information(id = "rasp-http-hook" , author = "1ue" , version = "0.0.6")
 public class HttpHook implements Module, ModuleLifecycle {
 
     @Resource
     private ModuleEventWatcher moduleEventWatcher;
 
     public void hookRequest() {
-        // 添加请求上下文
+
         new EventWatchBuilder(moduleEventWatcher)
                 .onClass("javax.servlet.http.HttpServlet")
                 .includeSubClasses()
@@ -45,12 +45,24 @@ public class HttpHook implements Module, ModuleLifecycle {
                         HttpServletResponse response = InterfaceProxyUtils.puppet(HttpServletResponse.class, advice.getParameterArray()[1]);
 //                        System.out.println(request);
 //                        System.out.println(response);
+                        // 添加请求上下文
                         RequestContextHolder.set(new RequestContextHolder.Context(request, response));
                         super.before(advice);
                     }
+
+                    @Override
+                    protected void afterReturning(Advice advice) {
+                        // 只关心顶层调用
+                        if (!advice.isProcessTop()) {
+                            return;
+                        }
+                        // 移除请求上下文
+                        System.out.println("移除请求上下文");
+                        RequestContextHolder.remove();
+                    }
+
                 });
 
-        // TODO 移除请求上下文
     }
 
     @Override

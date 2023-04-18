@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加DeserializeHook">
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="修复对HttpServlet中service的重复hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/http/HttpHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/http/HttpHook.java" afterDir="false" />
     </list>
@@ -80,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="29037000" />
+      <workItem from="1681629500041" duration="30614000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681783189238</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修复对HttpServlet中service的重复hook">
+      <created>1681796266572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681796266572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +139,7 @@
     <MESSAGE value="添加上下文获取" />
     <MESSAGE value="整合成一个module" />
     <MESSAGE value="添加DeserializeHook" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加DeserializeHook" />
+    <MESSAGE value="修复对HttpServlet中service的重复hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复对HttpServlet中service的重复hook" />
   </component>
 </project>
