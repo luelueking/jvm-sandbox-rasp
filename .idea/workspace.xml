@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加上下文获取">
-      <change afterPath="$PROJECT_DIR$/Rasp-All/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/context/RequestContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/xxe/XxeHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/InterfaceProxyUtils.java" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="整合成一个module">
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/HttpHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/HttpHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rce-Native-Hook/src/main/java/com/lue/rasp/NativeRceHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +29,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/2.2.17.Final/undertow-servlet-2.2.17.Final.jar!/io/undertow/servlet/spec/HttpServletResponseImpl.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/http/HttpServletResponse.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/ServletResponse.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lue.rasp.hook.http" />
       <recent name="com.lue.rasp" />
     </key>
   </component>
@@ -85,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="23072000" />
+      <workItem from="1681629500041" duration="26154000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -101,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681739231132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="整合成一个module">
+      <created>1681741253936</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681741253936</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加XXE防御" />
     <MESSAGE value="添加上下文获取" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加上下文获取" />
+    <MESSAGE value="整合成一个module" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合成一个module" />
   </component>
 </project>
