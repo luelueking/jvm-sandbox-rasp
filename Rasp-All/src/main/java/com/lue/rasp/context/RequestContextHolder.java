@@ -4,9 +4,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 通过 ThreadLocal 保存当前的 HttpServletRequest 和 HttpServletResponse 对象
+ * 通过 InheritableThreadLocal 保存当前的 HttpServletRequest 和 HttpServletResponse 对象
  */
 public class RequestContextHolder {
+    // InheritableThreadLocal 防止线程注入
     private static final InheritableThreadLocal<Context> REQUEST_THREAD_LOCAL = new InheritableThreadLocal<Context>();
 
     public static Context getContext() {

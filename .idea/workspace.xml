@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="移除上下文">
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="使用InheritableThreadLocal避免线程注入">
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/jni/JniHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/context/RequestContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/context/RequestContextHolder.java" afterDir="false" />
     </list>
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="32967000" />
+      <workItem from="1681629500041" duration="35789000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681802721877</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="使用InheritableThreadLocal避免线程注入">
+      <created>1681815945338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681815945338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
     <MESSAGE value="添加DeserializeHook" />
     <MESSAGE value="修复对HttpServlet中service的重复hook" />
     <MESSAGE value="移除上下文" />
-    <option name="LAST_COMMIT_MESSAGE" value="移除上下文" />
+    <MESSAGE value="使用InheritableThreadLocal避免线程注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用InheritableThreadLocal避免线程注入" />
   </component>
 </project>
