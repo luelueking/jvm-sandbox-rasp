@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-http-hook" , author = "1ue" , version = "0.0.3")
+@Information(id = "rasp-http-hook" , author = "1ue" , version = "0.0.4")
 public class HttpHook implements Module, ModuleLifecycle {
 
     @Resource
@@ -35,6 +35,10 @@ public class HttpHook implements Module, ModuleLifecycle {
                 ).onWatch(new AdviceListener() {
                     @Override
                     protected void before(Advice advice) throws Throwable {
+                        // 只关心顶层调用
+                        if (!advice.isProcessTop()) {
+                            return;
+                        }
                         System.out.println("hook到HttpServlet的service方法");
                         // jvm-sandbox 是在独立的 ClassLoader 中运行的，因此需要做一层代理
                         HttpServletRequest request = InterfaceProxyUtils.puppet(HttpServletRequest.class, advice.getParameterArray()[0]);
