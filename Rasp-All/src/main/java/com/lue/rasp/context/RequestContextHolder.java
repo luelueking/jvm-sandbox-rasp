@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
  * 通过 ThreadLocal 保存当前的 HttpServletRequest 和 HttpServletResponse 对象
  */
 public class RequestContextHolder {
-    private static final ThreadLocal<Context> REQUEST_THREAD_LOCAL = new ThreadLocal<Context>();
+    private static final InheritableThreadLocal<Context> REQUEST_THREAD_LOCAL = new InheritableThreadLocal<Context>();
 
     public static Context getContext() {
         return REQUEST_THREAD_LOCAL.get();
