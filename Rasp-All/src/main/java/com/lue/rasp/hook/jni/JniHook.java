@@ -8,6 +8,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.config.HookConfig;
 import com.lue.rasp.context.RequestContextHolder;
 import org.kohsuke.MetaInfServices;
 
@@ -84,7 +85,9 @@ public class JniHook implements Module, ModuleLifecycle {
 
     @Override
     public void loadCompleted() {
-        checkJNI();
+        if (HookConfig.isEnable("jni")) {
+            checkJNI();
+        }
         System.out.println("安装rasp的RCE-NATIVE-HOOK完毕！！！");
     }
 

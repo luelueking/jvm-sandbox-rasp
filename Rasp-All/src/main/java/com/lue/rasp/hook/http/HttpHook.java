@@ -7,6 +7,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.config.HookConfig;
 import com.lue.rasp.context.RequestContextHolder;
 import com.lue.rasp.utils.InterfaceProxyUtils;
 import org.kohsuke.MetaInfServices;
@@ -87,7 +88,9 @@ public class HttpHook implements Module, ModuleLifecycle {
 
     @Override
     public void loadCompleted() {
-        hookRequest();
+        if (HookConfig.isEnable("http")) {
+            hookRequest();
+        }
         System.out.println("rasp的RCE-HOOK加载完成！！！");
     }
 }

@@ -8,6 +8,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.config.HookConfig;
 import com.lue.rasp.context.RequestContextHolder;
 import org.kohsuke.MetaInfServices;
 
@@ -61,7 +62,9 @@ public class DeserializeHook implements Module, ModuleLifecycle {
 
     @Override
     public void loadCompleted() {
-        checkDeserialize();
+        if (HookConfig.isEnable("deserialize")) {
+            checkDeserialize();
+        }
         System.out.println("RASP的Deserialize-HOOK加载完毕！！！");
     }
 }

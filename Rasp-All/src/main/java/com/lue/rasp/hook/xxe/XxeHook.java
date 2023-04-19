@@ -7,6 +7,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.config.HookConfig;
 import org.dom4j.io.SAXReader;
 import org.kohsuke.MetaInfServices;
 
@@ -148,7 +149,9 @@ public class XxeHook implements Module, ModuleLifecycle {
 
     @Override
     public void loadCompleted() {
-        xxeDefense();
+        if (HookConfig.isEnable("xxe")) {
+            xxeDefense();
+        }
         System.out.println("rasp的Xxe-HOOK加载完毕");
     }
 }

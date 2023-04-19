@@ -10,6 +10,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.Advice;
 import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
+import com.lue.rasp.config.HookConfig;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
@@ -90,7 +91,9 @@ public class SqliHook implements Module, ModuleLifecycle {
 
     @Override
     public void loadCompleted() {
-        checkSql();
+        if (HookConfig.isEnable("sqli")) {
+            checkSql();
+        }
         System.out.println("rasp的Sqli-Hook加载完毕");
     }
 }
