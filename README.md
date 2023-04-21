@@ -17,6 +17,7 @@ jps -l // 查看选择attach的java进程
 - deserialize防御
 - 线程注入防御
 - JNI注入防御
+- websocket埋点
 ### 优点
 - 与jvm-sandbox集成(支持module热插拔)
 - 完全的类加载器隔离(不会出现openrasp类加载模式导致的类冲突问题)
