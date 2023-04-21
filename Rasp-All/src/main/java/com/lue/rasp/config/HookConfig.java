@@ -1,9 +1,6 @@
 package com.lue.rasp.config;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
-import java.util.Properties;
 
 public class HookConfig {
     public static HashMap<String,Boolean> hookConfig = new HashMap<String, Boolean>() {
@@ -14,6 +11,8 @@ public class HookConfig {
             put("rce",true);
             put("sqli",true);
             put("deserialize",true);
+            put("ws",true);
+            put("dubbo",true);
         }
     };
     public static Boolean isEnable(String hook) {

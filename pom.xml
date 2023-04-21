@@ -10,9 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Rce-Hook</module>
-        <module>Sqli-Hook</module>
         <module>Rce-Native-Hook</module>
-        <module>Xxe-Hook</module>
         <module>Rasp-All</module>
     </modules>
 

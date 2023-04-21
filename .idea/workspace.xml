@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加JNI注入防御">
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/resources/hookConfig.properties" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加简单config">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/dubbo/DubboRequestHook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/ws/WebsocketHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/http/HttpHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/http/HttpHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/jni/JniHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/jni/JniHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/xxe/XxeHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/xxe/XxeHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="40256000" />
+      <workItem from="1681629500041" duration="47342000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681825538677</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加简单config">
+      <created>1681907288086</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681907288086</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +201,7 @@
     <MESSAGE value="移除上下文" />
     <MESSAGE value="使用InheritableThreadLocal避免线程注入" />
     <MESSAGE value="添加JNI注入防御" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加JNI注入防御" />
+    <MESSAGE value="添加简单config" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加简单config" />
   </component>
 </project>

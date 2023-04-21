@@ -56,6 +56,13 @@
             <version>2.12.2</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-websocket</artifactId>
+            <version>9.0.64</version>
+        </dependency>
+
     </dependencies>
 
 </project>
