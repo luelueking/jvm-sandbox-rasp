@@ -22,6 +22,7 @@ com/lue/rasp/utils/InterfaceProxyUtils.class
 com/lue/rasp/hook/rce/NativeRceHook.class
 com/lue/rasp/hook/ws/WebsocketHook$1.class
 com/lue/rasp/utils/InterfaceProxyUtils$WrapInvocationHandler.class
+com/lue/rasp/utils/StackTrace.class
 com/lue/rasp/hook/xxe/XxeHook$4.class
 com/lue/rasp/context/RequestContextHolder.class
 com/lue/rasp/utils/InterfaceProxyUtils$1.class

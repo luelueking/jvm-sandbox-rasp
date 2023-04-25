@@ -4,18 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加简单config">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/dubbo/DubboRequestHook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/ws/WebsocketHook.java" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加websocket的hook">
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/StackTrace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/HookConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/HookConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/class-use/HookConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/class-use/HookConfig.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/config/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/RequestContextHolder.Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/RequestContextHolder.Context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/RequestContextHolder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/RequestContextHolder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/class-use/RequestContextHolder.Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/class-use/RequestContextHolder.Context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/class-use/RequestContextHolder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/class-use/RequestContextHolder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/context/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/DeserializeHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/DeserializeHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/class-use/DeserializeHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/class-use/DeserializeHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/deserialize/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/DubboRequestHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/DubboRequestHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/class-use/DubboRequestHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/class-use/DubboRequestHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/dubbo/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/HttpHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/HttpHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/class-use/HttpHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/class-use/HttpHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/http/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/JniHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/JniHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/class-use/JniHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/class-use/JniHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/jni/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/NativeRceHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/NativeRceHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/class-use/NativeRceHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/class-use/NativeRceHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/SqliHook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/class-use/SqliHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/class-use/SqliHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/WebsocketHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/WebsocketHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/class-use/WebsocketHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/class-use/WebsocketHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/ws/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/XxeHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/XxeHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/class-use/XxeHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/class-use/XxeHook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/xxe/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/InterfaceProxyUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/InterfaceProxyUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/class-use/InterfaceProxyUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/class-use/InterfaceProxyUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/utils/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +116,11 @@
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/xml/stream/XMLInputFactory.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/2.2.17.Final/undertow-servlet-2.2.17.Final.jar!/io/undertow/servlet/spec/HttpServletResponseImpl.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.64/tomcat-embed-websocket-9.0.64.jar!/javax/websocket/MessageHandler.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/http/HttpServletResponse.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/ServletResponse.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.64/tomcat-embed-websocket-9.0.64.jar!/javax/websocket/WebSocketContainer.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,7 +191,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
-      <workItem from="1681629500041" duration="47342000" />
+      <workItem from="1681629500041" duration="49329000" />
+      <workItem from="1682298965205" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -202,6 +284,7 @@
     <MESSAGE value="使用InheritableThreadLocal避免线程注入" />
     <MESSAGE value="添加JNI注入防御" />
     <MESSAGE value="添加简单config" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加简单config" />
+    <MESSAGE value="添加websocket的hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加websocket的hook" />
   </component>
 </project>

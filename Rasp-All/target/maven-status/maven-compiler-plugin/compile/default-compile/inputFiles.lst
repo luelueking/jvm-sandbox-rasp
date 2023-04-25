@@ -1,5 +1,6 @@
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/hook/dubbo/DubboRequestHook.java
+/Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/utils/StackTrace.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/hook/xxe/XxeHook.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java

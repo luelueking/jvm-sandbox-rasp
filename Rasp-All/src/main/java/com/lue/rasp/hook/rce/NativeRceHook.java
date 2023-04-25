@@ -10,13 +10,14 @@ import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import com.lue.rasp.config.HookConfig;
 import com.lue.rasp.context.RequestContextHolder;
+import com.lue.rasp.utils.StackTrace;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.4")
+@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.5")
 public class NativeRceHook implements Module, ModuleLifecycle {
 
 
@@ -38,6 +39,10 @@ public class NativeRceHook implements Module, ModuleLifecycle {
                         if (context != null) {
                             System.out.println(context);
                             System.out.println(context.getRequest().getRequestURI());
+                            System.out.println("开始打印StackTrace");
+                            for (String s : StackTrace.getStackTraceString()) {
+                                System.out.println(s);
+                            }
                             // 直接拦截
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }
