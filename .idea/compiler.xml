@@ -7,12 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Rasp-All" />
+        <module name="Rce-Native-Hook" />
+        <module name="Rce-Hook" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="jvm-sandbox-rasp" target="1.8" />
-      <module name="Rasp-All" target="1.8" />
-      <module name="Rce-Hook" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

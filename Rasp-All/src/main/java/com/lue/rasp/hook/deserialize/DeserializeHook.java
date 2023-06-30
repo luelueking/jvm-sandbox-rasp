@@ -9,7 +9,6 @@ import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import com.lue.rasp.config.HookConfig;
-import com.lue.rasp.context.RequestContextHolder;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;

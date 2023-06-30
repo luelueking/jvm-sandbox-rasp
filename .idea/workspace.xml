@@ -4,10 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加websocket的hook">
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/StackTrace.java" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加堆栈信息Stack Trace">
+      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/file/FileHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_jvm_sandbox_sandbox_api_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_jvm_sandbox_sandbox_common_api_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom2_2_0_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_kohsuke_metainf_services_metainf_services_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" afterDir="false" />
@@ -58,7 +80,6 @@
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/rce/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/SqliHook.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/class-use/SqliHook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/class-use/SqliHook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/com/lue/rasp/hook/sqli/package-summary.html" afterDir="false" />
@@ -90,11 +111,20 @@
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/META-INF/services/com.alibaba.jvm.sandbox.api.Module" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/META-INF/services/com.alibaba.jvm.sandbox.api.Module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm-sandbox-rasp.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +142,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar!/org/dom4j/io/SAXReader.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/javax/xml/stream/XMLInputFactory.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/undertow/undertow-servlet/2.2.17.Final/undertow-servlet-2.2.17.Final.jar!/io/undertow/servlet/spec/HttpServletResponseImpl.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.64/tomcat-embed-websocket-9.0.64.jar!/javax/websocket/MessageHandler.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/http/HttpServletResponse.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/ServletResponse.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.64/tomcat-embed-core-9.0.64.jar!/javax/servlet/http/HttpServletResponse.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.64/tomcat-embed-websocket-9.0.64.jar!/javax/websocket/MessageHandler.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.64/tomcat-embed-websocket-9.0.64.jar!/javax/websocket/WebSocketContainer.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar!/org/dom4j/io/SAXReader.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hvc29bak" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,24 +171,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3a32680dea5378984b9e2484c6977b57&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lue.rasp.hook.http" />
@@ -192,7 +226,12 @@
       <updated>1681628635883</updated>
       <workItem from="1681628638434" duration="839000" />
       <workItem from="1681629500041" duration="49329000" />
-      <workItem from="1682298965205" duration="3904000" />
+      <workItem from="1682298965205" duration="6999000" />
+      <workItem from="1682482357361" duration="1000" />
+      <workItem from="1683301060751" duration="658000" />
+      <workItem from="1683697753019" duration="1431000" />
+      <workItem from="1684938228927" duration="2442000" />
+      <workItem from="1688080200749" duration="9162000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -257,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681907288086</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加堆栈信息Stack Trace">
+      <created>1682425238812</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682425238812</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +331,7 @@
     <MESSAGE value="添加JNI注入防御" />
     <MESSAGE value="添加简单config" />
     <MESSAGE value="添加websocket的hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加websocket的hook" />
+    <MESSAGE value="添加堆栈信息Stack Trace" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加堆栈信息Stack Trace" />
   </component>
 </project>

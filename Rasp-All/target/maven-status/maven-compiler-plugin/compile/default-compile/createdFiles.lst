@@ -1,4 +1,5 @@
 com/lue/rasp/hook/xxe/XxeHook.class
+com/lue/rasp/hook/file/FileHook$1.class
 com/lue/rasp/hook/jni/JniHook$1.class
 com/lue/rasp/hook/http/HttpHook.class
 com/lue/rasp/hook/ws/WebsocketHook.class
@@ -27,5 +28,6 @@ com/lue/rasp/hook/xxe/XxeHook$4.class
 com/lue/rasp/context/RequestContextHolder.class
 com/lue/rasp/utils/InterfaceProxyUtils$1.class
 com/lue/rasp/hook/sqli/SqliHook$1.class
+com/lue/rasp/hook/file/FileHook.class
 com/lue/rasp/hook/jni/JniHook$2.class
 META-INF/services/com.alibaba.jvm.sandbox.api.Module

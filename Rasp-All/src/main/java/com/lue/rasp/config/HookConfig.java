@@ -13,6 +13,7 @@ public class HookConfig {
             put("deserialize",true);
             put("ws",true);
             put("dubbo",true);
+            put("file",true);
         }
     };
     public static Boolean isEnable(String hook) {

@@ -1,4 +1,5 @@
 com.lue.rasp.hook.deserialize.DeserializeHook
+com.lue.rasp.hook.file.FileHook
 com.lue.rasp.hook.http.HttpHook
 com.lue.rasp.hook.jni.JniHook
 com.lue.rasp.hook.rce.NativeRceHook

@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Rasp-All/Rasp-All.iml" filepath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" filepath="$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" filepath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jvm-sandbox-rasp.iml" filepath="$PROJECT_DIR$/jvm-sandbox-rasp.iml" />
     </modules>
   </component>
 </project>
