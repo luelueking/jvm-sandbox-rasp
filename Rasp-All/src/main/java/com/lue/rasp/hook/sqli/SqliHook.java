@@ -11,6 +11,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import com.lue.rasp.config.HookConfig;
+import com.lue.rasp.utils.StackTrace;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
@@ -41,6 +42,7 @@ public class SqliHook implements Module, ModuleLifecycle {
                         boolean validateMySql = WallUtils.isValidateMySql(sql);
                         System.out.println(validateMySql);
                         if (!validateMySql) {
+                            StackTrace.logTrace();
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }
                         super.before(advice);

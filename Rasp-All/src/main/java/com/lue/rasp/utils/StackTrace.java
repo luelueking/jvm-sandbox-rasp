@@ -1,5 +1,7 @@
 package com.lue.rasp.utils;
 
+import com.lue.rasp.context.RequestContextHolder;
+
 /**
  * 调用栈
  */
@@ -10,6 +12,18 @@ public class StackTrace {
      */
     private final static String RASP_STACK_END = "java.com.alibaba.jvm.sandbox.spy";
 
+    public static void logTraceWithContext(RequestContextHolder.Context context) {
+        System.out.println("开始打印危险route");
+        System.out.println(context);
+        System.out.println(context.getRequest().getRequestURI());
+        logTrace();
+    }
+    public static void logTrace() {
+        System.out.println("开始打印StackTrace");
+        for (String s : StackTrace.getStackTraceString()) {
+            System.out.println(s);
+        }
+    }
 
     public static String[] getStackTraceString() {
         return getStackTraceString(100,true);
@@ -67,7 +81,5 @@ public class StackTrace {
         }
         return effectiveArray;
     }
-
-
 
 }

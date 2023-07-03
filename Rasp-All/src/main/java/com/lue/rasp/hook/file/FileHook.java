@@ -9,6 +9,8 @@ import com.alibaba.jvm.sandbox.api.listener.ext.AdviceListener;
 import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import com.lue.rasp.config.HookConfig;
+import com.lue.rasp.context.RequestContextHolder;
+import com.lue.rasp.utils.StackTrace;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
@@ -33,10 +35,16 @@ public class FileHook implements Module, ModuleLifecycle {
                 .onWatch(new AdviceListener() {
                     @Override
                     protected void before(Advice advice) throws Throwable {
-                        java.nio.file.Path filePath = (java.nio.file.Path) advice.getParameterArray()[0];
-                        if (filePath.toFile().getPath().contains("..")) {
-                            System.out.println(filePath);
-                            ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!! evil file path"));
+                        RequestContextHolder.Context context = RequestContextHolder.getContext();
+                        if (null != context) {
+                            java.nio.file.Path filePath = (java.nio.file.Path) advice.getParameterArray()[0];
+                            if (filePath.toFile().getPath().contains("..")) {
+                                System.out.println("evil file path: " + filePath);
+                                System.out.println(filePath);
+                                StackTrace.logTraceWithContext(context);
+                                ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!! evil file path"));
+                            }
+
                         }
                         super.before(advice);
                     }

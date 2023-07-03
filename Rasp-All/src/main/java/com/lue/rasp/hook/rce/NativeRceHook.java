@@ -37,12 +37,7 @@ public class NativeRceHook implements Module, ModuleLifecycle {
                         // TODO 对上下文进行分析判断
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
                         if (context != null) {
-                            System.out.println(context);
-                            System.out.println(context.getRequest().getRequestURI());
-                            System.out.println("开始打印StackTrace");
-                            for (String s : StackTrace.getStackTraceString()) {
-                                System.out.println(s);
-                            }
+                            StackTrace.logTraceWithContext(context);
                             // 直接拦截
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }

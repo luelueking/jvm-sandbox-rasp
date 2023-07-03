@@ -10,6 +10,7 @@ import com.alibaba.jvm.sandbox.api.listener.ext.EventWatchBuilder;
 import com.alibaba.jvm.sandbox.api.resource.ModuleEventWatcher;
 import com.lue.rasp.config.HookConfig;
 import com.lue.rasp.context.RequestContextHolder;
+import com.lue.rasp.utils.StackTrace;
 import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
@@ -53,8 +54,7 @@ public class JniHook implements Module, ModuleLifecycle {
                         System.out.println("hook到classLoader的loadLibrary0方法");
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
                         if (context != null) {
-                            System.out.println(context);
-                            System.out.println(context.getRequest().getRequestURI());
+                            StackTrace.logTraceWithContext(context);
                             // 直接拦截
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }

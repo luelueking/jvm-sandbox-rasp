@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加堆栈信息Stack Trace">
-      <change afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/file/FileHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_jvm_sandbox_sandbox_api_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_jvm_sandbox_sandbox_common_api_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom2_2_0_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_kohsuke_metainf_services_metainf_services_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="abe46204-eded-4051-a14b-9fd76a869b18" name="Changes" comment="添加File的hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/Rasp-All.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/config/HookConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/deserialize/DeserializeHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/file/FileHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/file/FileHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/jni/JniHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/jni/JniHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/rce/NativeRceHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/StackTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/src/main/java/com/lue/rasp/utils/StackTrace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/Rasp-All-1.0-SNAPSHOT-sources.jar" afterDir="false" />
@@ -111,20 +93,17 @@
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/apidocs/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/apidocs/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/META-INF/services/com.alibaba.jvm.sandbox.api.Module" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/META-INF/services/com.alibaba.jvm.sandbox.api.Module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/config/HookConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/deserialize/DeserializeHook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/jni/JniHook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/rce/NativeRceHook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/classes/com/lue/rasp/hook/sqli/SqliHook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rasp-All/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Hook/Rce-Hook.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rce-Native-Hook/Rce-Native-Hook.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm-sandbox-rasp.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +118,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -171,25 +155,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3a32680dea5378984b9e2484c6977b57&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "/Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "3a32680dea5378984b9e2484c6977b57",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lue.rasp.hook.http" />
@@ -231,7 +216,7 @@
       <workItem from="1683301060751" duration="658000" />
       <workItem from="1683697753019" duration="1431000" />
       <workItem from="1684938228927" duration="2442000" />
-      <workItem from="1688080200749" duration="9162000" />
+      <workItem from="1688080200749" duration="13114000" />
     </task>
     <task id="LOCAL-00001" summary="添加XXE防御">
       <created>1681655602001</created>
@@ -303,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682425238812</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加File的hook">
+      <created>1688091070017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688091070017</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,6 +324,7 @@
     <MESSAGE value="添加简单config" />
     <MESSAGE value="添加websocket的hook" />
     <MESSAGE value="添加堆栈信息Stack Trace" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加堆栈信息Stack Trace" />
+    <MESSAGE value="添加File的hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加File的hook" />
   </component>
 </project>
