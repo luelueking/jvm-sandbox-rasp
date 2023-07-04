@@ -36,7 +36,8 @@ public class DeserializeHook implements Module, ModuleLifecycle {
                         // TODO 上下文分析
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
                         if (null != context) {
-                            StackTrace.logTraceWithContext(context);
+//                            StackTrace.logTraceWithContext(context);
+                            StackTrace.logAttack(context,"deserialize","high");
                         }
                         ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         super.before(advice);

@@ -54,7 +54,8 @@ public class JniHook implements Module, ModuleLifecycle {
                         System.out.println("hook到classLoader的loadLibrary0方法");
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
                         if (context != null) {
-                            StackTrace.logTraceWithContext(context);
+//                            StackTrace.logTraceWithContext(context);
+                            StackTrace.logAttack(context,"jni","high");
                             // 直接拦截
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }

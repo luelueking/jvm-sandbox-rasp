@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.5")
+@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.6")
 public class NativeRceHook implements Module, ModuleLifecycle {
 
 
@@ -37,7 +37,8 @@ public class NativeRceHook implements Module, ModuleLifecycle {
                         // TODO 对上下文进行分析判断
                         RequestContextHolder.Context context = RequestContextHolder.getContext();
                         if (context != null) {
-                            StackTrace.logTraceWithContext(context);
+//                            StackTrace.logTraceWithContext(context);
+                            StackTrace.logAttack(context,"rce","high");
                             // 直接拦截
                             ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }

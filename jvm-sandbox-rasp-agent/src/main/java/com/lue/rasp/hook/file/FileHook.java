@@ -41,7 +41,8 @@ public class FileHook implements Module, ModuleLifecycle {
                             if (filePath.toFile().getPath().contains("..")) {
                                 System.out.println("evil file path: " + filePath);
                                 System.out.println(filePath);
-                                StackTrace.logTraceWithContext(context);
+//                                StackTrace.logTraceWithContext(context);
+                                StackTrace.logAttack(context,"pathTra","middle");
                                 ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!! evil file path"));
                             }
 

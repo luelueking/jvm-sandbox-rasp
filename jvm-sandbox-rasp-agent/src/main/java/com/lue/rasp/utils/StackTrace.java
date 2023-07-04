@@ -2,6 +2,11 @@ package com.lue.rasp.utils;
 
 import com.lue.rasp.context.RequestContextHolder;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * 调用栈
  */
@@ -11,6 +16,33 @@ public class StackTrace {
      * RASP自身的栈开始位置
      */
     private final static String RASP_STACK_END = "java.com.alibaba.jvm.sandbox.spy";
+
+
+
+
+    public static void logAttack(RequestContextHolder.Context context, String attackType, String attackRisk) throws IOException {
+        String dateDirName = TimeUtils.getDateDirName();
+        String dirName = "/tmp/" + dateDirName;
+        FileUtils.createDir(dirName);
+        String timeFileName = TimeUtils.getTimeFileName();
+
+        String filePath = dirName+"/"+timeFileName;
+
+        filePath = filePath + "." + attackType + "." + attackRisk;
+        FileWriter fileWriter = new FileWriter(filePath);
+        try (BufferedWriter writer = new BufferedWriter(fileWriter)) {
+            writer.write(context.getRequest().getRequestURI());
+            writer.newLine();
+            String[] stackTraceString = getStackTraceString();
+            for (String s : stackTraceString) {
+                writer.write(s);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public static void logTraceWithContext(RequestContextHolder.Context context) {
         System.out.println("开始打印危险route");
