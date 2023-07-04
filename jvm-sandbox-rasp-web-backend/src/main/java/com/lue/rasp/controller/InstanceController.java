@@ -1,5 +1,6 @@
 package com.lue.rasp.controller;
 
+import com.dtflys.forest.Forest;
 import com.lue.rasp.entity.AppInstance;
 import com.lue.rasp.entity.SysCfg;
 import com.lue.rasp.service.AppInstanceService;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Map;
 
 @Api(tags = "实例管理")
 @RestController
@@ -25,6 +27,20 @@ public class InstanceController {
     @Autowired
     private SysCfgService sysCfgService;
 
+    @ApiOperation("根据id查询实例agent加载模块列表")
+    @GetMapping("/agent/modules/list/{id}")
+    public Object agentModules(@PathVariable("id") Long id) {
+        AppInstance instance = appInstanceService.getById(id);
+        Object result = getAgentInfo(instance, "/sandbox/default/module/http/sandbox-module-mgr/list?1=1");
+        return R.ok(result);
+    }
+    @ApiOperation("根据id查询实例agent信息Info")
+    @GetMapping("/agent/info/{id}")
+    public Object agentInfo(@PathVariable("id") Long id) {
+        AppInstance instance = appInstanceService.getById(id);
+        Object result = getAgentInfo(instance,"/sandbox/default/module/http/sandbox-info/version?1=1");
+        return R.ok(result);
+    }
 
     @ApiOperation("根据id查询实例")
     @GetMapping("/info/{id}")
@@ -72,5 +88,16 @@ public class InstanceController {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public Object getAgentInfo(AppInstance instance, String url) {
+        return Forest.get(url)
+                .backend("okhttp3")        // 设置后端为 okhttp3
+                .host(instance.getAgentIp())
+                .port(Integer.parseInt(instance.getAgentPort()))
+                .maxRetryCount(3)          // 设置请求最大重试次数为 3
+                // 设置请求成功判断条件回调函数
+                .successWhen((req, res) -> res.noException() && res.statusOk())
+                .execute();
     }
 }
