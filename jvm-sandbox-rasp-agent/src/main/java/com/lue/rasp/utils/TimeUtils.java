@@ -21,10 +21,8 @@ public class TimeUtils {
         return dateFormat.format(currentDate);
     }
 
-    public static String getTimeFileName() {
-        // 生成文件名
-        SimpleDateFormat dateFormat = new SimpleDateFormat("HH-mm-ss");
-        String fileName = dateFormat.format(new Date());
-        return fileName;
+    public static String getTimeString() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+        return  dateFormat.format(new Date());
     }
 }

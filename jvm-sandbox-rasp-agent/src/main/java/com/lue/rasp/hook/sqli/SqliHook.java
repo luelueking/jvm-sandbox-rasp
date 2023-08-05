@@ -18,6 +18,7 @@ import org.kohsuke.MetaInfServices;
 import javax.annotation.Resource;
 
 // 目前只支持Mysql,因为是使用的druid的WallUtils来检测，所以在module中要选择xxx-with-dependencies.jar
+// TODO 添加Mybatis的hook
 @MetaInfServices(Module.class)
 @Information(id = "rasp-sqli-hook" , author = "1ue" , version = "0.0.3")
 public class SqliHook implements Module, ModuleLifecycle {

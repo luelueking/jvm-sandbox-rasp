@@ -24,14 +24,19 @@ public class StackTrace {
         String dateDirName = TimeUtils.getDateDirName();
         String dirName = "/tmp/" + dateDirName;
         FileUtils.createDir(dirName);
-        String timeFileName = TimeUtils.getTimeFileName();
-
-        String filePath = dirName+"/"+timeFileName;
-
-        filePath = filePath + "." + attackType + "." + attackRisk;
+        String filePath = dirName + "/" + IDUtils.generateUUID() + ".log";
         FileWriter fileWriter = new FileWriter(filePath);
+        System.out.println("开始写入日志");
         try (BufferedWriter writer = new BufferedWriter(fileWriter)) {
+            writer.write(TimeUtils.getTimeString());
+            writer.newLine();
+            writer.write(attackType);
+            writer.newLine();
+            writer.write(attackRisk);
+            writer.newLine();
             writer.write(context.getRequest().getRequestURI());
+            writer.newLine();
+            writer.write("success Block!");
             writer.newLine();
             String[] stackTraceString = getStackTraceString();
             for (String s : stackTraceString) {

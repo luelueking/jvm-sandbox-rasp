@@ -23,6 +23,7 @@ com/lue/rasp/hook/sqli/SqliHook.class
 com/lue/rasp/hook/http/HttpHook$1.class
 com/lue/rasp/hook/sqli/SqliHook$2.class
 com/lue/rasp/utils/InterfaceProxyUtils.class
+com/lue/rasp/utils/IDUtils.class
 com/lue/rasp/hook/rce/NativeRceHook.class
 com/lue/rasp/hook/ws/WebsocketHook$1.class
 com/lue/rasp/utils/InterfaceProxyUtils$WrapInvocationHandler.class

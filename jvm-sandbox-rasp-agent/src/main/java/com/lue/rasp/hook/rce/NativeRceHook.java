@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.6")
+@Information(id = "rasp-rce-native-hook" , author = "1ue" , version = "0.0.7")
 public class NativeRceHook implements Module, ModuleLifecycle {
 
 

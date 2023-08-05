@@ -15,10 +15,12 @@ import org.kohsuke.MetaInfServices;
 
 import javax.annotation.Resource;
 import java.io.ObjectInputStream;
+import java.io.ObjectStreamClass;
+import java.net.URL;
 
 
 @MetaInfServices(Module.class)
-@Information(id = "rasp-deserialize-hook" , author = "1ue" , version = "0.0.1")
+@Information(id = "rasp-deserialize-hook" , author = "1ue" , version = "0.0.4")
 public class DeserializeHook implements Module, ModuleLifecycle {
 
     @Resource
@@ -28,18 +30,21 @@ public class DeserializeHook implements Module, ModuleLifecycle {
         new EventWatchBuilder(moduleEventWatcher)
                 .onClass(ObjectInputStream.class)
                 .includeBootstrap()
-                .onBehavior("readObject")
+                .onBehavior("resolveClass")
                 .onWatch(new AdviceListener() {
                     @Override
                     protected void before(Advice advice) throws Throwable {
-                        System.out.println("hook到readObject方法");
-                        // TODO 上下文分析
-                        RequestContextHolder.Context context = RequestContextHolder.getContext();
-                        if (null != context) {
+                        ObjectStreamClass oc = (ObjectStreamClass) advice.getParameterArray()[0];
+                        System.out.println("hook到resolveClass方法:" + oc);
+                        if (oc.getName().startsWith("java.net")) {
+                            // TODO 上下文分析
+                            RequestContextHolder.Context context = RequestContextHolder.getContext();
+                            if (null != context ) {
 //                            StackTrace.logTraceWithContext(context);
-                            StackTrace.logAttack(context,"deserialize","high");
+                                StackTrace.logAttack(context,"deserialize","high");
+                            }
+                            ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         }
-                        ProcessController.throwsImmediately(new RuntimeException("Block By RASP!!!"));
                         super.before(advice);
                     }
                 });
