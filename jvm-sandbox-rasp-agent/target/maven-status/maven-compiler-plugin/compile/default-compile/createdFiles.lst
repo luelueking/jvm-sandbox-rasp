@@ -1,10 +1,12 @@
 com/lue/rasp/hook/xxe/XxeHook.class
 com/lue/rasp/hook/file/FileHook$1.class
+com/lue/rasp/hook/reflect/ReflectHook.class
 com/lue/rasp/hook/jni/JniHook$1.class
 com/lue/rasp/hook/http/HttpHook.class
 com/lue/rasp/hook/ws/WebsocketHook.class
 com/lue/rasp/hook/rce/NativeRceHook$1.class
 com/lue/rasp/hook/xxe/XxeHook$1.class
+com/lue/rasp/hook/reflect/ReflectHook$1.class
 com/lue/rasp/hook/xxe/XxeHook$5.class
 com/lue/rasp/hook/deserialize/DeserializeHook.class
 com/lue/rasp/config/LogConfig.class

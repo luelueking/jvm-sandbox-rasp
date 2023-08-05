@@ -10,6 +10,7 @@
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/hook/sqli/SqliHook.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/hook/file/FileHook.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/config/HookConfig.java
+/Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/hook/reflect/ReflectHook.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/utils/TimeUtils.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/config/LogConfig.java
 /Users/zhchen/Downloads/github-workspace/jvm-sandbox-rasp/jvm-sandbox-rasp-agent/src/main/java/com/lue/rasp/utils/InterfaceProxyUtils.java

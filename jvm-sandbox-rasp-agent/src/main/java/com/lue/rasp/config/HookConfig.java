@@ -14,6 +14,7 @@ public class HookConfig {
             put("ws",true);
             put("dubbo",true);
             put("file",true);
+            put("reflect",true);
         }
     };
     public static Boolean isEnable(String hook) {
