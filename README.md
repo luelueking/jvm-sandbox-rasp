@@ -23,3 +23,6 @@ jps -l // 查看选择attach的java进程
 ### 优点
 - 与jvm-sandbox集成(支持module热插拔)
 - 完全的类加载器隔离(不会出现openrasp类加载模式导致的类冲突问题)
+### 备注
+- jvm-sandbox-rasp-web-backend为后端代码
+- jvm-sandbox-rasp-web-agent为agent的代码，也是rasp的核心逻辑
